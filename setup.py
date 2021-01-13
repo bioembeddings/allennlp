@@ -81,7 +81,7 @@ setup_requirements = [
     # add other setup requirements as necessary
 ] + pytest_runner
 
-setup(name='allennlp',
+setup(name='bio-embeddings-allennlp',
       version=VERSION["VERSION"],
       description='An open-source NLP research library, built on PyTorch.',
       long_description=open("README.md").read(),
@@ -105,7 +105,7 @@ setup(name='allennlp',
           "jsonnet>=0.10.0 ; sys.platform != 'win32'",
           'overrides',
           'nltk',
-          'spacy>=2.1.0,<2.2',
+          'spacy>=2.1.0,<3.0',
           'numpy',
           'tensorboardX>=1.2',
           'boto3',
